@@ -1,0 +1,2 @@
+"use strict";var e=require("react"),r=function(){return r=Object.assign||function(e){for(var r,t=1,n=arguments.length;t<n;t++)for(var l in r=arguments[t])Object.prototype.hasOwnProperty.call(r,l)&&(e[l]=r[l]);return e},r.apply(this,arguments)};"function"==typeof SuppressedError&&SuppressedError,exports.TextField=function(t){return e.createElement("div",null,e.createElement("span",null,t.label),e.createElement("input",r({},t)))};
+//# sourceMappingURL=index.js.map

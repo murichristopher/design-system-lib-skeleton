@@ -1,0 +1,2 @@
+import r from"react";var e=function(){return e=Object.assign||function(r){for(var e,t=1,n=arguments.length;t<n;t++)for(var o in e=arguments[t])Object.prototype.hasOwnProperty.call(e,o)&&(r[o]=e[o]);return r},e.apply(this,arguments)};function t(t){return r.createElement("div",null,r.createElement("span",null,t.label),r.createElement("input",e({},t)))}"function"==typeof SuppressedError&&SuppressedError;export{t as TextField};
+//# sourceMappingURL=index.js.map

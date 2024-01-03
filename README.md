@@ -1,10 +1,13 @@
 A React-based repository showcasing a design system skeleton with TypeScript integration and Rollup for module bundling.
 
-## Example usage
+## Installing the Library:
 
 ```bash
 yarn add design-system-lib-example
 ```
+
+## Importing the Component and Usage
+
 ```tsx
 import { TextField } from "design-system-lib-example";
 

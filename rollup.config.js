@@ -5,6 +5,8 @@ import dts from "rollup-plugin-dts";
 import fs from "fs";
 import { terser } from "rollup-plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import postcss from "rollup-plugin-postcss";
+
 const packageJson = JSON.parse(fs.readFileSync("./package.json", "utf8"));
 
 export default [
@@ -28,11 +30,13 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       terser(),
+      postcss(),
     ],
   },
   {
     input: "dist/esm/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
+    external: [/\.css$/],
   },
 ];
